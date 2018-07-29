@@ -10,6 +10,6 @@
 
 6. pandas.ipynb 		      : This file contains few sample programs based on python pandas operations.
 
-7. Normalization.ipynb    : This file contains sample program for usage of min-max & standard-deviation for feature normalization using data from file Data_for_Missing_Values.csv
+7. Feature_Normalization/	  : This demonstrates various normalization technique.
 
-8. PCA.py                 : This This file contains sample program for usage of PCA on cancer data.
+8. ML_Challenge_Survival/	  : This demonstrates the ship data.
