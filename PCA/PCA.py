@@ -11,7 +11,7 @@ can = load_breast_cancer()
 
 # Make a data frame
 df = pd.DataFrame(can['data'], columns = can['feature_names'])
-df.head()
+df.head(10)
 df.shape
 
 # Normalize the features
