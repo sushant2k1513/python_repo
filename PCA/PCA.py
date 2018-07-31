@@ -1,24 +1,22 @@
 # Package import
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-%matplotlib inline
 
 # Import data
 from sklearn.datasets import load_breast_cancer
 can = load_breast_cancer()
 
 # Make a data frame
-df = pd.DataFrame(can['data'], columns = can['feature_names'])
-df.head(10)
-df.shape
+dataf = pd.DataFrame(can['data'], columns = can['feature_names'])
+dataf.head(10)
+dataf.shape
 
 # Normalize the features
 from sklearn.preprocessing import StandardScaler
 scalar = StandardScaler()
-scalar.fit(df)
-scaled_df = scalar.transform(df)
+scalar.fit(dataf)
+scaled_df = scalar.transform(dataf)
 
 # Get PCA
 from sklearn.decomposition import PCA
